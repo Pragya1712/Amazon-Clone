@@ -54,13 +54,21 @@ body{
     margin-left: 40px;
     
 }
-#signin ,#cart{
-    margin-top: 50px;
-    margin-left: 70px;
-    
-    font-size: 24px;
-    font-weight: bold;
-    
+#signin {
+  margin-top: 55px;
+  margin-left: 70px;
+  
+  font-size: 24px;
+  font-weight: bold;
+  
+}
+#cart{
+  margin-top: 50px;
+  margin-left: 60px;
+  
+  font-size: 24px;
+  font-weight: bold;
+  
 }
 .sub-navigation{
     display: flex;
