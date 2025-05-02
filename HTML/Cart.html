@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Cart Empty</title>
+  <link rel="stylesheet" href="/CSS/Cart.css">
+</head>
+<body>
+    <div class="main-navigation">
+        <nav>
+            <ul class="main-navigation-options">
+                <li><a href="index.html"><img src="/Images/amazon logo.png" alt="amazon" height="100" width="100" id="amazon-logo"></a></li>
+                <li style="margin-top: 50px;"><a href="address.html" id="address" style="text-decoration: none;">Update Address <p style="font-size: 10px; padding-left:45px; padding-top:10px; text-decoration: none;">Delivering to Mumbai- 400001</p></a></li>
+                <li><form action="/search" method="get">
+                    <label for="categories"></label>
+                    <select name="categories" id="categories" style="margin-bottom: -5px; padding-top:2px">
+                        <option value="All Categories">All Categories</option>
+                        <option value="Alexa Skills">Alexa Skills</option>
+                        <option value="Amazon Devices">Amazon Devices</option>
+                        <option value="Amazon Fashion">Amazon Fresh</option>
+                        <option value="Amazon Pharamacy">Amazon Pharamacy</option>
+                        <option value="Beauty">Beauty</option>
+                        <option value="Baby">Baby</option>
+                        <option value="Books">Books</option>
+                        <option value="Clothing & Accessories">Clothing & Accessories</option>
+                        <option value="Computer & Appliances">Computer & Appliances</option>
+                        <option value="Luggage & Bags">Luggage & Bags</option>
+                        <option value="Shoes & Footwares">Shoes & Footwares</option>
+                        <option value="Sports, Fitness & Outdoors">Sports, Fitness & Outdoors</option>
+                        <option value="Watches">Watches</option>
+                        
+                    </select>
+                    <input type="text" name="query" placeholder="Search here!" id="search-bar" style="margin-left: -5px;">
+                    <button type="submit" id="search-button" style="margin-left: -5px;">Search</button>
+                </form></li>
+                <li><label for="Language"></label>
+                <select name="language" id="languages">
+                    <option value="English">EN-English</option>
+                    <option value="Hindi">HI-हिंदी</option>
+                    <option value="Marathi">MT-मराठी</option>
+                    <option value="Punjabi">PU-ਪੰਜਾਬੀ</option>
+                    <option value="Telgu">TL-తెలుగు</option>
+                    <option value="Bengali">BN-বাংলা </option>
+                </select></li>
+                <li id="signin"><a href="SignIn.html" style="color: white; text-decoration: none;">Sign In</a></li>
+                <li id="cart"><a href="Cart.html" style="color: white; text-decoration: none;">Cart</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+    <div class="sub-navigation">
+        <nav>
+            <ul class="sub-navigation">
+                <li><a href="">All</a></li>
+                <li><a href="">Alexa Skills</a></li>
+                <li><a href="">Amazon Devices</a></li>
+                <li><a href="">Amazon Fresh</a></li>
+                <li><a href="">Amazon Pharamacy</a></li>
+                <li><a href="">Beauty</a></li>
+                <li><a href="">Baby</a></li>
+                <li><a href="">Books</a></li>
+                <li><a href="">Clothing & Accessories</a></li>
+                <li><a href="">Computer & Appliances</a></li>
+                <li><a href="">Luggage & Bags</a></li>
+                <li><a href="">Shoes & Footwares</a></li>
+                <li><a href="">Sports, Fitness & Outdoors</a></li>
+                <li><a href="">Watches</a></li>
+            </ul>
+        </nav>
+    </div>
+  <div class="cart-box">
+    <div class="cart-content">
+      <img src="/Images/cart.jpg" alt="Cart Image" class="cart-image">
+      <div class="cart-text">
+        <h2>Your Amazon Cart is empty</h2>
+        <a href="#">Shop today’s deals</a>
+        <div class="buttons">
+          <button class="signin-btn"><a href="SignIn.html">Sign in to your account</a></button>
+          <button class="signup-btn"><a href="SignIn.html">Sign up now</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+}
+  .main-navigation{
+    background-color: black;
+    
+}
+.main-navigation-options{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+}
+#amazon-logo{
+    height: 110px;
+    width: 140px;
+    margin-left: 20px;
+}
+#address{
+    margin-left: 40px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;  
+}
+#categories{
+    margin-top: 25px;
+    margin-left: 40px;
+    height: 40px;
+    width: 85px;
+    font-size: 10px;
+    
+}
+#search-bar{
+    height: 40px;
+    width: 25rem;
+    padding: 0;
+}
+#search-button{
+    height: 43px;
+    width: 70px;
+    background-color: rgb(248, 173, 33);
+   
+    font-weight: bold;
+    border-radius: 4px;
+}
+#languages{
+    margin-top: 50px;
+    height: 30px;
+    width: 40px;
+    margin-left: 40px;
+    
+}
+#signin ,#cart{
+    margin-top: 50px;
+    margin-left: 70px;
+    
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.sub-navigation{
+    display: flex;
+    
+    background-color: rgb(45, 40, 40);
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sub-navigation li {
+    margin: 10px;
+    font-size: 15px;
+    list-style: none;
+    
+}
+.sub-navigation a{
+    color: white;
+    text-decoration: none;
+
+}
+.sub-navigation a:hover{
+    text-decoration: underline;
+}
+  
+  .cart-box {
+    background-color: #ffffff;
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .cart-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .cart-image {
+    width: 250px;
+    max-width: 100%;
+  }
+  
+  .cart-text {
+    flex: 1;
+    padding-left: 30px;
+  }
+  
+  .cart-text h2 {
+    margin-bottom: 10px;
+    color: #111;
+  }
+  
+  .cart-text a {
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .cart-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .buttons {
+    margin-top: 15px;
+  }
+  
+  .signin-btn {
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .signin-btn a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  .signup-btn {
+    background-color: white;
+    border: 1px solid #888;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .signup-btn a{
+    color: black;
+    text-decoration: none;
+  }
+  

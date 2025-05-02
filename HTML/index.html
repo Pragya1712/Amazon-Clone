@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-Online Shopping Platform</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+</head>
+<body>
+    <div class="main-navigation">
+        <nav>
+            <ul class="main-navigation-options">
+                <li><a href="index.html"><img src="/Images/amazon logo.png" alt="amazon" height="100" width="100" id="amazon-logo"></a></li>
+                <li style="margin-top: 50px;"><a href="Address.html" id="address" style="text-decoration: none;">Update Address <p style="font-size: 10px; padding-left:45px; padding-top:10px; text-decoration: none;">Delivering to Mumbai- 400001</p></a></li>
+                <li><form action="/search" method="get">
+                    <label for="categories"></label>
+                    <select name="categories" id="categories" style="margin-bottom: -5px; padding-top:2px">
+                        <option value="All Categories">All Categories</option>
+                        <option value="Alexa Skills">Alexa Skills</option>
+                        <option value="Amazon Devices">Amazon Devices</option>
+                        <option value="Amazon Fashion">Amazon Fresh</option>
+                        <option value="Amazon Pharamacy">Amazon Pharamacy</option>
+                        <option value="Beauty">Beauty</option>
+                        <option value="Baby">Baby</option>
+                        <option value="Books">Books</option>
+                        <option value="Clothing & Accessories">Clothing & Accessories</option>
+                        <option value="Computer & Appliances">Computer & Appliances</option>
+                        <option value="Luggage & Bags">Luggage & Bags</option>
+                        <option value="Shoes & Footwares">Shoes & Footwares</option>
+                        <option value="Sports, Fitness & Outdoors">Sports, Fitness & Outdoors</option>
+                        <option value="Watches">Watches</option>
+                        
+                    </select>
+                    <input type="text" name="query" placeholder="Search here!" id="search-bar" style="margin-left: -5px;">
+                    <button type="submit" id="search-button" style="margin-left: -5px;">Search</button>
+                </form></li>
+                <li><label for="Language"></label>
+                <select name="language" id="languages">
+                    <option value="English">EN-English</option>
+                    <option value="Hindi">HI-हिंदी</option>
+                    <option value="Marathi">MT-मराठी</option>
+                    <option value="Punjabi">PU-ਪੰਜਾਬੀ</option>
+                    <option value="Telgu">TL-తెలుగు</option>
+                    <option value="Bengali">BN-বাংলা </option>
+                </select></li>
+                <li id="signin"><a href="SignIn.html" style="color: white; text-decoration: none;">Sign In</a></li>
+                <li id="cart"><a href="Cart.html" style="color: white; text-decoration: none;">Cart</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+    <div class="sub-navigation">
+        <nav>
+            <ul class="sub-navigation">
+                <li><a href="">All</a></li>
+                <li><a href="">Alexa Skills</a></li>
+                <li><a href="">Amazon Devices</a></li>
+                <li><a href="">Amazon Fresh</a></li>
+                <li><a href="">Amazon Pharamacy</a></li>
+                <li><a href="">Beauty</a></li>
+                <li><a href="">Baby</a></li>
+                <li><a href="">Books</a></li>
+                <li><a href="">Clothing & Accessories</a></li>
+                <li><a href="">Computer & Appliances</a></li>
+                <li><a href="">Luggage & Bags</a></li>
+                <li><a href="">Shoes & Footwares</a></li>
+                <li><a href="">Sports, Fitness & Outdoors</a></li>
+                <li><a href="">Watches</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="middle-section">
+        <img src="/Images/main image.jpg" alt="Great Indian Summer Sale" width="100%" height="400rem">
+        <h1>Today's Top Deals</h1>
+        <div class="main-section">
+        <div class="filters">
+            <h3>Filtered by</h3>
+            <br>
+            <label for="department">Department</label>
+            <br>
+            <label for="beauty"><input type="radio" name="department" id="beauty">Beauty <br></label>
+            <label for="clothing"><input type="radio" name="department" id="clothing">Clothing & Accessories <br></label>
+            <label for="pharamcy"><input type="radio" name="department" id="pharamcy">Pharamacy <br></label>
+            <label for="sports"><input type="radio" name="department" id="sports">Sports <br></label>
+            <label for="watches"><input type="radio" name="department" id="watches">Watches <br></label><br><br>
+            <label for="brands">Brands</label>
+            <br>
+            <label for="loreal"><input type="radio" name="brands" id="loreal">L'Oreal Paris <br></label>
+            <label for="biba"><input type="radio" name="brands" id="biba">Biba <br></label>
+            <label for="cetaphil"><input type="radio" name="brands" id="cetaphil">Cetaphil <br></label>
+            <label for="decathlon"><input type="radio" name="brands" id="decathlon">Decathlon <br></label>
+            <label for="titan"><input type="radio" name="brands" id="titan">Titan <br></label><br><br>
+            <label for="reviews">Customer Reviews</label>
+            <br>
+            <label for="5 star"><input type="radio" name="reviews" id="5 star">⭐⭐⭐⭐⭐ and up <br></label>
+            <label for="4 star"><input type="radio" name="reviews" id="4 star">⭐⭐⭐⭐ and up <br></label>
+            <label for="3 star"><input type="radio" name="reviews" id="3 star">⭐⭐⭐ and up <br></label>
+            <label for="2 star"><input type="radio" name="reviews" id="2 star">⭐⭐ and up <br></label>
+            <label for="1 star"><input type="radio" name="reviews" id="1 star">⭐ and up <br></label><br><br>
+            <label for="Price">Price</label>
+            <br>
+            <label for="all"><input type="radio" name="Price" id="all">All<br></label>
+            <label for="500"><input type="radio" name="Price" id="500">Under ₹500<br></label>
+            <label for="1000"><input type="radio" name="Price" id="1000">Under ₹1,000<br></label>
+            <label for="2000"><input type="radio" name="Price" id="2000">Under ₹2,000<br></label>
+            <label for="5000"><input type="radio" name="Price" id="5000">₹5,000 and Above<br></label>
+            <br><br>
+            <label for="discount">Discount</label>
+            <br>
+            <label for="All"><input type="radio" name="discount" id="All">All<br></label>
+            <label for="10%"><input type="radio" name="discount" id="10%">10% off or more <br></label>
+            <label for="25%"><input type="radio" name="discount" id="25%">25% off or more<br></label>
+            <label for="50%"><input type="radio" name="discount" id="50%">50% off or more<br></label>
+            <label for="70%"><input type="radio" name="discount" id="70%">70% off or more<br></label><br><br>
+        </div>
+        <div class="main-products">
+            <div class="alexa">
+                <div class="products" style="margin-top: 50px; margin-left:100px;">
+                    <img src="/Images/alexa1.jpg" alt="echo dot">
+                    <p style="margin-top: 5px;">Echo Dot (5th Gen) | Smart speaker with Bigger sound, Motion Detection, Temperature Sensor, Alexa and Bluetooth| Blue</p>
+                    <p style="font-weight: bold; font-size:20px">₹5,499</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 50px;">
+                    <img src="/Images/alexa2.jpg" alt="echo dot">
+                    <p style="margin-top: 5px;">Echo Pop| Smart speaker with Alexa and Bluetooth| Loud sound, balanced bass, crisp vocals| Black</p>
+                    <p style="font-weight: bold; font-size:20px">₹3,949</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+            <div class="devices">
+                <div class="products"  style="margin-top: 20px; margin-left:100px;">
+                    <img src="/Images/device1.jpg" alt="tap camera">
+                    <p style="margin-top: 5px; font-size:12px;">Tapo TP-Link C200 360° 2MP 1080p Full HD Pan/Tilt Home Security Wi-Fi Smart Camera| Alexa Enabled| 2-Way Audio| Night Vision| Motion Detection| Sound and Light Alarm| Indoor CCTV White</p>
+                    <p style="font-weight: bold; font-size:20px">₹1,299</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 20px;">
+                    <img src="/Images/device2.jpg" alt="amazon kindle">
+                    <p style="margin-top: 5px;">All-new Amazon Kindle Paperwhite (16 GB) – Our fastest Kindle ever, with new 7" glare-free display and weeks of battery life</p>
+                    <p style="font-weight: bold; font-size:20px">₹16,999</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+            <div class="fresh">
+                <div class="products"  style="margin-top: 20px; margin-left:100px;">
+                    <img src="/Images/fresh1.jpg" alt="oats">
+                    <p style="margin-top: 5px; ">Quaker Oats 1Kg, Rolled Oats Natural Wholegrain, Nutritious Breakfast Cereals, Dalia Porridge, Easy To Cook, Honey</p>
+                    <p style="font-weight: bold; font-size:20px">₹159</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 20px;">
+                    <img src="/Images/fresh2.jpg" alt="salt">
+                    <p style="margin-top: 5px;">Tata Salt Lite, Low Sodium, 1kg</p>
+                    <p style="font-weight: bold; font-size:20px">₹42</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+            <div class="pharamcy">
+                <div class="products"  style="margin-top: 20px; margin-left:100px;">
+                    <img src="/Images/pharamacy1.jpg" alt="Digene">
+                    <p style="margin-top: 5px; font-size:12px;">Digene Mint - Bottle of 450ml Antacid Antigas Syrup | Quick and Lasting Relief from Acidity, Gas, Bloating, Heartburn and Indigestion | Anytime, Anywhere Bottle Pack | Sugar Free Medicine | Doctor's No.1 Antacid Brand | Refreshing Mint Flavor | Eco Pack</p>
+                    <p style="font-weight: bold; font-size:20px">₹224</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 20px;">
+                    <img src="/Images/pharamacy2.jpg" alt="BP Monitor">
+                    <p style="margin-top: 5px; font-size:12px;">Omron HEM 7124 Fully Automatic Digital Arm Blood Pressure Monitor with Intellisense Technology For Most Accurate Measurement, Blue</p>
+                    <p style="font-weight: bold; font-size:20px">₹1,650</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+            <div class="beauty">
+                <div class="products"  style="margin-top: 20px; margin-left:100px;">
+                    <img src="/Images/beauty1.jpg" alt="eyeshadow">
+                    <p style="margin-top: 5px; ">Maybelline New York Eyeshadow Palette, 12 Highly Blendable Shades, Matte and Sheen Colours, The Blushed Nudes, 9g</p>
+                    <p style="font-weight: bold; font-size:20px">₹549</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 20px;">
+                    <img src="/Images/beauty2.jpg" alt="sun screen">
+                    <p style="margin-top: 5px; font-size:12px;">DOT & KEY Vitamin C + E Super Bright Sunscreen Spf 50 |Water-Light,UVA/UVB & Blue Light Protection|For Even Toned & Glowing Skin|With Liquid Spf 50+++| No White Cast| For All Skin Types| 50G,Pack Of 1</p>
+                    <p style="font-weight: bold; font-size:20px">₹333</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+            <div class="books">
+                <div class="products"  style="margin-top: 20px; margin-left:100px;">
+                    <img src="/Images/baby1.jpg" alt="rich dad poor dad">
+                    <p style="margin-top: 5px;">Himalaya Extra Moisturizing Baby Soap 75 G | Free | No 1 Doctor Prescribed Brand | Aloe, Olive, Milk| Cleanses & Moisturizes Baby's Skin</p>
+                    <p style="font-weight: bold; font-size:20px">₹135</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 20px;">
+                    <img src="/Images/baby2.jpg" alt="power">
+                    <p style="margin-top: 5px; font-size:12px">Huggies Complete Comfort Wonder Pants | Pant Style Baby Diapers Newborn / XS Size, 48 Count | India's Fastest Absorbing Diaper, Patented Dry Xpert Channel, Ideal for 0-5 Kgs</p>
+                    <p style="font-weight: bold; font-size:20px">₹320</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+            <div class="clothes">
+                <div class="products"  style="margin-top: 20px; margin-left:100px;">
+                    <img src="/Images/clothes1.jpg" alt="women clothes">
+                    <p style="margin-top: 5px;">KLOSIA Women Printed Kurta and Pant Set with Dupatta</p>
+                    <p style="font-weight: bold; font-size:20px">₹699</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 20px;">
+                    <img src="/Images/clothes2.jpg" alt="men clothes">
+                    <p style="margin-top: 5px;">Peter England Men's Neo Slim Knit Textured Blaze</p>
+                    <p style="font-weight: bold; font-size:20px">₹16,999</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+            <div class="computer">
+                <div class="products"  style="margin-top: 20px; margin-left:100px;">
+                    <img src="/Images/computer1.jpg" alt="hp computer">
+                    <p style="margin-top: 5px; font-size:12px;">HP All-in-One, Intel N200 (8GB DDR5, 512GB SSD) 21.45'' (54.5 Cm), FHD, Win11, White, 4.17 Kg, Intel UHD Graphics, 720P HD Camera W/Privacy Shutter, Dual Speakers, Dg0154In</p>
+                    <p style="font-weight: bold; font-size:20px">₹30,490</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 20px;">
+                    <img src="/Images/computer2.jpg" alt="amazon kindle">
+                    <p style="margin-top: 5px;">Redmi A3X (Olive Green, 3GB RAM, 64GB Storage) | Premium Halo Design | 90Hz Display | Powerful Octa Core Processor</p>
+                    <p style="font-weight: bold; font-size:20px">₹6,059</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+            <div class="luggage">
+                <div class="products"  style="margin-top: 20px; margin-left:100px;">
+                    <img src="/Images/luggage1.jpg" alt="trolley bags">
+                    <p style="margin-top: 5px; font-size:12px;">Aristocrat Airpro 3 Pc Set Cabin 55cm(Small) Check-in 66cm(Medium) Check-in 75cm(Large) 8 Wheels Spinner Trolley Bags, Hard Case Luggage, Lightweight Bag & Combination Lock|7 Years Warranty (Green)</p>
+                    <p style="font-weight: bold; font-size:20px">₹5,099</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 20px;">
+                    <img src="/Images/luggage2.jpg" alt="bag">
+                    <p style="margin-top: 5px; font-size:12px;">Lavie Sport 43cm Chairman 24 Litres Backpack with Padded Laptop Sleeve | Vegan Leather Business Backpack for Men & Women | Durable Office Bag | Upto 14 inch Notebook/MacBook Compatible</p>
+                    <p style="font-weight: bold; font-size:20px">₹759</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+            <div class="shoes">
+                <div class="products"  style="margin-top: 20px; margin-left:100px;">
+                    <img src="/Images/shoes1.jpg" alt="men shoes">
+                    <p style="margin-top: 5px; font-size:12px;">ASIAN Men DOMINATOR-03 Running and Casual wear Running Shoes with Laces, Lightweight and Comfortable Shoes with Upper Fabric and Phylon Sole for Men & Boys for Sports and Gym</p>
+                    <p style="font-weight: bold; font-size:20px">₹1,049</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 20px;">
+                    <img src="/Images/shoes2.jpg" alt="women footwear">
+                    <p style="margin-top: 5px;">Vendoz Women Stylish Cream Flat Sandals</p>
+                    <p style="font-weight: bold; font-size:20px">₹439</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+            <div class="sports">
+                <div class="products"  style="margin-top: 20px; margin-left:100px;">
+                    <img src="/Images/sports1.jpg" alt="bike">
+                    <p style="margin-top: 5px; font-size:12px;">Amazon Brand - Symactive Unisex Sprinter S2000 Series | 26T Geared Mountain Bike (Shimano 21 | Speed Gear) | Front Suspension | Dual Disc Brake | Frame Size: 16.5 inch | Alloy Stem | Blue</p>
+                    <p style="font-weight: bold; font-size:20px">₹6,499</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 20px;">
+                    <img src="/Images/sports2.jpg" alt="dumbbells">
+                    <p style="margin-top: 5px; font-size:12px;">Lifelong PVC Hex Dumbbells Pack of 2 (5kg*2) Black Color for Home Gym Equipment Fitness Barbell|Gym Exercise|Home Workout, Gym Dumbbells|Dumbbells Weights for Men & Women (6 Months Warranty)</p>
+                    <p style="font-weight: bold; font-size:20px">₹499</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+            <div class="watches">
+                <div class="products"  style="margin-top: 20px; margin-left:100px;">
+                    <img src="/Images/watch1.jpg" alt="men watch">
+                    <p style="margin-top: 5px;">Emporio Armani Stainless Steel Analog Black Dial Men Watch-Ar1808, Silver Band</p>
+                    <p style="font-weight: bold; font-size:20px">₹22,413
+                    </p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+                <div class="products"  style="margin-top: 20px;">
+                    <img src="/Images/watch2.jpg" alt="women watch">
+                    <p style="margin-top: 5px; font-size:14px">STYLEDOSE Luxury Dial in Square case with Ston Studded brecelet Strap Quartz Analogue Wrist Watches for Women's & Girls&Miss&Ladies</p>
+                    <p style="font-weight: bold; font-size:20px">₹379</p>
+                    <button type="submit" id="BuyNow"><a href="#">Buy Now</a></button><br>
+                    <button type="submit" id="Cart"><a href="#">Add to Cart</a></button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    </div>
+    <footer>
+        <p>&copy; 2025 Amazon Clone. All rights reserved.</p>
+      </footer>
+</body>
+</html>

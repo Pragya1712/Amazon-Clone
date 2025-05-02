@@ -1,0 +1,86 @@
+
+  .main-content{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    align-items: center;
+    height: 100vh;
+
+  }
+  
+  .popup-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .popup-box h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+  }
+  
+  .subtext {
+    font-size: 13px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .signin-btn {
+    width: 100%;
+    background-color: #f7ca00;
+    border: 1px solid #a88734;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .signin-btn a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .or-text {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    margin: 12px 0 8px;
+  }
+  
+  .pincode-box {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .pincode-box input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .apply-btn {
+    padding: 8px 12px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+  }
+  footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    justify-content: center;
+    padding-top: 10px;
+    position: relative;
+    
+}
+  

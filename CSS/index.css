@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-navigation{
+    background-color: black;
+    
+}
+.main-navigation-options{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+}
+#amazon-logo{
+    height: 110px;
+    width: 140px;
+    margin-left: 20px;
+}
+#address{
+    margin-left: 40px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;  
+}
+#categories{
+    margin-top: 25px;
+    margin-left: 40px;
+    height: 40px;
+    width: 85px;
+    font-size: 10px;
+    
+}
+#search-bar{
+    height: 40px;
+    width: 25rem;
+    padding: 0;
+}
+#search-button{
+    height: 43px;
+    width: 70px;
+    background-color: rgb(248, 173, 33);
+   
+    font-weight: bold;
+    border-radius: 4px;
+}
+#languages{
+    margin-top: 50px;
+    height: 30px;
+    width: 40px;
+    margin-left: 40px;
+    
+}
+#signin ,#cart{
+    margin-top: 50px;
+    margin-left: 70px;
+    
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.sub-navigation{
+    display: flex;
+    
+    background-color: rgb(45, 40, 40);
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sub-navigation li {
+    margin: 10px;
+    font-size: 15px;
+    list-style: none;
+    
+}
+.sub-navigation a{
+    color: white;
+    text-decoration: none;
+
+}
+.sub-navigation a:hover{
+    text-decoration: underline;
+}
+.middle-section h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.main-section{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.filters{
+    margin-left: 20px;
+    
+}
+.filters input[type="radio"]{
+    font-size: 14px;
+    display: inline-block;
+    
+
+}
+.main-products{
+    display: inline-block;
+    justify-content: space-between;
+}
+.alexa , .devices, .fresh,.pharamcy,.beauty,.baby,.books,.clothes,.computer,.luggage,.shoes,.sports,.watches{
+    display: flex;
+    justify-content: space-evenly;
+}
+.products{
+    margin-bottom: 25px;
+    height: 450px;
+    width: 30%;
+    padding: 20px;
+    background:rgb(234, 219, 168) ;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.8);
+}
+.products a{
+    text-decoration: none;
+    color: black;
+
+}
+#BuyNow , #Cart{
+    margin-top: 10px;
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 14px;
+        color: aliceblue;
+        background-color: rgb(236, 156, 8);
+        box-shadow: 1px 1px black
+}
+#BuyNow :hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+#Cart :hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.products img{
+    height: 250px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 40px;
+    padding-top: 10px;
+    position: relative;
+}
+
+
