@@ -83,4 +83,39 @@
     position: relative;
     
 }
+@media (max-width: 480px) {
+  .popup-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .popup-box h3 {
+    font-size: 16px;
+  }
+
+  .subtext,
+  .or-text {
+    font-size: 12px;
+  }
+
+  .pincode-box {
+    flex-direction: column;
+  }
+
+  .pincode-box input,
+  .apply-btn {
+    width: 100%;
+  }
+
+  .signin-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+    height: auto;
+    padding: 15px 0;
+  }
+}
   

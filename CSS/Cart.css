@@ -54,21 +54,13 @@ body{
     margin-left: 40px;
     
 }
-#signin {
-  margin-top: 55px;
-  margin-left: 70px;
-  
-  font-size: 24px;
-  font-weight: bold;
-  
-}
-#cart{
-  margin-top: 50px;
-  margin-left: 60px;
-  
-  font-size: 24px;
-  font-weight: bold;
-  
+#signin ,#cart{
+    margin-top: 50px;
+    margin-left: 70px;
+    
+    font-size: 24px;
+    font-weight: bold;
+    
 }
 .sub-navigation{
     display: flex;
@@ -165,11 +157,66 @@ body{
   footer{
     margin-top: 90px;
     background-color: black;
-    justify-content: center;
     color: white;
     text-align: center;
+    justify-content: center;
     height: 40px;
     padding-top: 10px;
     position: relative;
 }
+@media (max-width: 768px) {
+  .main-navigation-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #amazon-logo,
+  #address,
+  #categories,
+  #search-bar,
+  #search-button,
+  #languages,
+  #signin,
+  #cart {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .cart-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-text {
+    padding-left: 0;
+  }
+
+  .sub-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cart-text h2 {
+    font-size: 20px;
+  }
+
+  .signin-btn,
+  .signup-btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
   
